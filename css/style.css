@@ -1,0 +1,39 @@
+body {
+  background: #262431;
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+.container {
+  width: 80%;
+  padding: 20px;
+}
+.reqfield{
+  text-align: right;
+}
+
+.error-msg{
+  color: red;
+  font-size: 12px;
+}
+
+.submit-btn {
+  background: #666E80;
+  width: 170px;
+  padding: 8px;
+  margin-top: 1rem;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+.error-msg{
+  margin-bottom: 0;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+}
