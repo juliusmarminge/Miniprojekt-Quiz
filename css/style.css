@@ -4,16 +4,39 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-p {
+.p-heading {
   margin-bottom: 30px;
+  font-size: 1.2rem;
 }
 
 .container {
-  width: 80%;
+  text-align: center;
+  width: 70%;
   padding: 20px;
 }
-.reqfield{
-  text-align: right;
+
+.form-alternatives{
+  display: inline-block;
+  text-align: left;
+}
+
+.card {
+  display: none;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  background: #393c44;
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+}
+.card img{
+  padding-top: 40px;
+  width: 90%;
+}
+.card .card-text {
+  font-size: 1.2rem;
 }
 
 .error-msg{
@@ -22,7 +45,8 @@ p {
 }
 
 .submit-btn {
-  background: #666E80;
+  background: #262431;
+  color: #fff;
   width: 170px;
   padding: 8px;
   margin-top: 1rem;
@@ -36,4 +60,8 @@ p {
 
 .submit-btn:hover {
   cursor: pointer;
+}
+
+#q1{
+  display: block;
 }

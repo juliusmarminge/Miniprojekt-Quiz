@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Quiz</title>
+  <title>Quiz - Vilken amerikansk delstat?</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet"> <!-- Finare font-->
@@ -13,93 +13,55 @@
 <body>
   <div class="container">
     <h1>Quiz</h1>
-    <p>Bästa quizen om fotboll</p>
+    <p class="p-heading">Vilken amerikansk delstat?</p>
+    <p id="p-points"></p>
     <form id="quiz-form" action="" name="vform" onsubmit="return Validate()">
 
       <!-- Fråga 1 -->
-      <div class="form-row">
-        <div class="form-group">
-          <label for="q1">1: Vad heter Real Madrids senaste värvning? (Efternamn)</label>
-          <input type="text" class="form-control" id="q1" aria-describedby="q1Help" placeholder="Svar">
-          <p id="q1-error" class="error-msg"></p>
-        </div>
-      </div>
-      <!-- Fråga 2 -->
-      <div class="form-row">
-        <div class="form-group">
-          <label for="q2">2: Hur mycket kostade denna värvning? (Miljoner Euro)</label>
-          <input type="text" class="form-control" id="q2" aria-describedby="q2Help" placeholder="Svar">
-          <p id="q2-error" class="error-msg"></p>
-        </div>
-      </div>
-      <!-- Fråga 3 -->
-      <div class="form-row">
-        <div class="form-group">
-          <label for="q3">3: Vilken nation har vunnit flest VM-guld?</label>
-          <input type="text" class="form-control" id="q3" aria-describedby="q3Help" placeholder="Svar">
-          <p id="q3-error" class="error-msg"></p>
-        </div>
-      </div>
-      <!-- Fråga 4 -->
-      <div class="form-row">
-        <div class="form-group">
-          <label for="q4">4: Hur många VM-guld har denna nation vunnit?</label>
-          <input type="text" class="form-control" id="q4" aria-describedby="q4Help" placeholder="Svar">
-          <p id="q4-error" class="error-msg"></p>
-        </div>
-      </div>
-      <!-- Fråga 5 -->
-      <div class="form-row">
-        <div class="form-group">
-          <label for="q5">5: Sveriges bästa placering i ett VM är tvåa. Vilket år var detta?</label>
-          <input type="text" class="form-control" id="q5" aria-describedby="q5Help" placeholder="Svar">
-          <p id="q5-error" class="error-msg"></p>
-        </div>
-      </div>
-      <!-- Fråga 6 -->
-      <div class="form-row">
-        <div class="form-group">
-          <label for="q6">6: Vilket lag vann Division 4 Blekinge 2019?</label>
-          <input type="text" class="form-control" id="q6" aria-describedby="q6Help" placeholder="Svar">
-          <p id="q6-error" class="error-msg"></p>
-        </div>
-      </div>
-      <!-- Fråga 7 -->
-      <div class="form-row">
-        <div class="form-group">
-          <label for="q7">7: </label>
-          <input type="text" class="form-control" id="q7" aria-describedby="q7Help" placeholder="Svar">
-          <p id="q7-error" class="error-msg"></p>
-        </div>
-      </div>
-      <!-- Fråga 8 -->
-      <div class="form-row">
-        <div class="form-group">
-          <label for="q8">8: </label>
-          <input type="text" class="form-control" id="q8" aria-describedby="q8Help" placeholder="Svar">
-          <p id="q8-error" class="error-msg"></p>
-        </div>
-      </div>
-      <!-- Fråga 9 -->
-      <div class="form-row">
-        <div class="form-group">
-          <label for="q9">9: </label>
-          <input type="text" class="form-control" id="q9" aria-describedby="q9Help" placeholder="Svar">
-          <p id="q9-error" class="error-msg"></p>
-        </div>
-      </div>
-      <!-- Fråga 10 -->
-      <div class="form-row">
-        <div class="form-group">
-          <label for="q10">10: </label>
-          <input type="text" class="form-control" id="q10" aria-describedby="q10Help" placeholder="Svar">
-          <p id="q10-error" class="error-msg"></p>
+      <div class="card" id="q1">
+        <img src="img/cali.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">1. Vilken amerikansk delstat är markerad på bilden?</p>
+          <div class="form-alternatives">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="q1ans">
+              <label class="form-check-label" for="q1a1">Kalifornien</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio">
+              <label class="form-check-label" for="q1a2">San Fransisco</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio">
+              <label class="form-check-label" for="q1a3">Las Vegas</label>
+            </div>
+          </div>
+          <br><a href="#" class="btn submit-btn" id="q1-btn">Nästa fråga</a>
         </div>
       </div>
 
-      <button type="submit" class="btn submit-btn">Skicka</button>
-    </form>
-  </div>
+      <!-- Fråga 2 -->
+      <div class="card" id="q2">
+        <img src="img/maryland.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">1. Vilken amerikansk delstat är markerad på bilden?</p>
+          <div class="form-alternatives">
+            <div class="form-check">
+              <input class="form-check-input" type="radio">
+              <label class="form-check-label" for="q2a1">New York</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio">
+              <label class="form-check-label" for="q2a2">Washington</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="q2ans">
+              <label class="form-check-label" for="q2a3">Maryland</label>
+            </div>
+          </div>
+          <br><a href="#" class="btn submit-btn" id="q2-btn">Nästa fråga</a>
+        </div>
+      </div>
 
 
   <script src="js/script.js"></script> <!-- Inlänkning av javascriptet -->
