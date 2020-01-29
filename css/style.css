@@ -15,7 +15,7 @@ body {
   padding: 20px;
 }
 
-.form-alternatives {
+.form-alternatives {    /*centrerar svarsalternativen i kortet, men dem är fortfarande "ryggade" till vänster*/
   display: inline-block;
   text-align: left;
 }
@@ -43,7 +43,8 @@ body {
 
 .error-msg {
   color: red;
-  font-size: 12px;
+  font-size: 0.75rem;
+  margin-bottom: 0;
 }
 
 .submit-btn {
@@ -60,16 +61,5 @@ body {
   background: #222428;
   border: 1px solid #262431;
   color: #f1f1f1;
-}
-
-.error-msg {
-  margin-bottom: 0;
-}
-
-.submit-btn:hover {
   cursor: pointer;
-}
-
-#q1 {
-  display: block;
 }
