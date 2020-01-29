@@ -13,250 +13,251 @@
 <body>
   <div class="container">
     <h2>Vilken amerikansk delstat?</h1>
-    <p id="p-points"></p>
-    <form id="quiz-form" action="" name="vform" onsubmit="return Validate()">
+      <p id="p-points">_______________________________</p>
+      <form id="quiz-form" action="" name="vform" onsubmit="return Validate()">
 
-      <!-- Fråga 1 -->
-      <div class="card" id="q1">
-        <img src="img/cali.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">1. Vilken amerikansk delstat är markerad på bilden?</p>
-          <div class="form-alternatives">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" id="q1-ans">
-              <label class="form-check-label" for="q1a1">Kalifornien</label>
+        <!-- Fråga 1 -->
+        <div class="card" id="q1">
+          <img src="img/cali.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">1. Vilken amerikansk delstat är markerad på bilden?</p>
+            <div class="form-alternatives">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q1" id="q1-ans">
+                <label class="form-check-label" for="q1a1">Kalifornien</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q1">
+                <label class="form-check-label" for="q1a2">San Fransisco</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q1">
+                <label class="form-check-label" for="q1a3">Las Vegas</label>
+              </div>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio">
-              <label class="form-check-label" for="q1a2">San Fransisco</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio">
-              <label class="form-check-label" for="q1a3">Las Vegas</label>
-            </div>
+            <br><a href="#" class="btn submit-btn" id="q1-btn">Nästa fråga</a>
           </div>
-          <br><a href="#" class="btn submit-btn" id="q1-btn">Nästa fråga</a>
         </div>
-      </div>
 
-      <!-- Fråga 2 -->
-      <div class="card" id="q2">
-        <img src="img/maryland.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">1. Vilken amerikansk delstat är markerad på bilden?</p>
-          <div class="form-alternatives">
-            <div class="form-check">
-              <input class="form-check-input" type="radio">
-              <label class="form-check-label" for="q2a1">New York</label>
+        <!-- Fråga 2 -->
+        <div class="card" id="q2">
+          <img src="img/maryland.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">2. Vilken amerikansk delstat är markerad på bilden?</p>
+            <div class="form-alternatives">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q2">
+                <label class="form-check-label" for="q2a1">New York</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q2">
+                <label class="form-check-label" for="q2a2">Washington</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q2" id="q2-ans">
+                <label class="form-check-label" for="q2a3">Maryland</label>
+              </div>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio">
-              <label class="form-check-label" for="q2a2">Washington</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" id="q2-ans">
-              <label class="form-check-label" for="q2a3">Maryland</label>
-            </div>
+            <br><a href="#" class="btn submit-btn" id="q2-btn">Nästa fråga</a>
           </div>
-          <br><a href="#" class="btn submit-btn" id="q2-btn">Nästa fråga</a>
         </div>
-      </div>
 
-      <!-- Fråga 3 -->
-      <div class="card" id="q3">
-        <img src="img/maryland.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">1. Vilken amerikansk delstat är markerad på bilden?</p>
-          <div class="form-alternatives">
-            <div class="form-check">
-              <input class="form-check-input" type="radio">
-              <label class="form-check-label" for="q2a1">New York</label>
+        <!-- Fråga 3 -->
+        <div class="card" id="q3">
+          <img src="img/colorado.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">3. Vilken amerikansk delstat är markerad på bilden?</p>
+            <div class="form-alternatives">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q3">
+                <label class="form-check-label" for="q2a1">Idaho</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q3" id="q3-ans">
+                <label class="form-check-label" for="q2a2">Colorado</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q3">
+                <label class="form-check-label" for="q2a3">Utah</label>
+              </div>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio">
-              <label class="form-check-label" for="q2a2">Washington</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" id="q3-ans">
-              <label class="form-check-label" for="q2a3">Maryland</label>
-            </div>
+            <br><a href="#" class="btn submit-btn" id="q3-btn">Nästa fråga</a>
           </div>
-          <br><a href="#" class="btn submit-btn" id="q3-btn">Nästa fråga</a>
         </div>
-      </div>
 
-      <!-- Fråga 4 -->
-      <div class="card" id="q4">
-        <img src="img/maryland.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">1. Vilken amerikansk delstat är markerad på bilden?</p>
-          <div class="form-alternatives">
-            <div class="form-check">
-              <input class="form-check-input" type="radio">
-              <label class="form-check-label" for="q2a1">New York</label>
+        <!-- Fråga 4 -->
+        <div class="card" id="q4">
+          <img src="img/florida.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">4. Vilken amerikansk delstat är markerad på bilden?</p>
+            <div class="form-alternatives">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q4">
+                <label class="form-check-label" for="q2a1">Beverly Hills</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q4">
+                <label class="form-check-label" for="q2a2">Miami</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q4" id="q4-ans">
+                <label class="form-check-label" for="q2a3">Florida</label>
+              </div>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio">
-              <label class="form-check-label" for="q2a2">Washington</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" id="q4-ans">
-              <label class="form-check-label" for="q2a3">Maryland</label>
-            </div>
+            <br><a href="#" class="btn submit-btn" id="q4-btn">Nästa fråga</a>
           </div>
-          <br><a href="#" class="btn submit-btn" id="q4-btn">Nästa fråga</a>
         </div>
-      </div>
 
-      <!-- Fråga 5 -->
-      <div class="card" id="q5">
-        <img src="img/maryland.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">1. Vilken amerikansk delstat är markerad på bilden?</p>
-          <div class="form-alternatives">
-            <div class="form-check">
-              <input class="form-check-input" type="radio">
-              <label class="form-check-label" for="q2a1">New York</label>
+        <!-- Fråga 5 -->
+        <div class="card" id="q5">
+          <img src="img/connecticut.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">5. Vilken amerikansk delstat är markerad på bilden?</p>
+            <div class="form-alternatives">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q5" id="q5-ans">
+                <label class="form-check-label" for="q2a1">Connecticut</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q5">
+                <label class="form-check-label" for="q2a2">Rhode Island</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q5">
+                <label class="form-check-label" for="q2a3">New Jersey</label>
+              </div>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio">
-              <label class="form-check-label" for="q2a2">Washington</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" id="q5-ans">
-              <label class="form-check-label" for="q2a3">Maryland</label>
-            </div>
+            <br><a href="#" class="btn submit-btn" id="q5-btn">Nästa fråga</a>
           </div>
-          <br><a href="#" class="btn submit-btn" id="q5-btn">Nästa fråga</a>
         </div>
-      </div>
 
-      <!-- Fråga 6 -->
-      <div class="card" id="q6">
-        <img src="img/maryland.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">1. Vilken amerikansk delstat är markerad på bilden?</p>
-          <div class="form-alternatives">
-            <div class="form-check">
-              <input class="form-check-input" type="radio">
-              <label class="form-check-label" for="q2a1">New York</label>
+        <!-- Fråga 6 -->
+        <div class="card" id="q6">
+          <img src="img/illinois.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">6. Vilken amerikansk delstat är markerad på bilden?</p>
+            <div class="form-alternatives">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q6">
+                <label class="form-check-label" for="q2a1">Minnesota</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q6" id="q6-ans">
+                <label class="form-check-label" for="q2a2">Illinois</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q6">
+                <label class="form-check-label" for="q2a3">Chicago</label>
+              </div>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio">
-              <label class="form-check-label" for="q2a2">Washington</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" id="q6-ans">
-              <label class="form-check-label" for="q2a3">Maryland</label>
-            </div>
+            <br><a href="#" class="btn submit-btn" id="q6-btn">Nästa fråga</a>
           </div>
-          <br><a href="#" class="btn submit-btn" id="q6-btn">Nästa fråga</a>
         </div>
-      </div>
 
-      <!-- Fråga 7 -->
-      <div class="card" id="q7">
-        <img src="img/maryland.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">1. Vilken amerikansk delstat är markerad på bilden?</p>
-          <div class="form-alternatives">
-            <div class="form-check">
-              <input class="form-check-input" type="radio">
-              <label class="form-check-label" for="q2a1">New York</label>
+        <!-- Fråga 7 -->
+        <div class="card" id="q7">
+          <img src="img/kentucky.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">7. Vilken amerikansk delstat är markerad på bilden?</p>
+            <div class="form-alternatives">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q7" id="q7-ans">
+                <label class="form-check-label" for="q2a1">Kentucky</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q7">
+                <label class="form-check-label" for="q2a2">North Carolina</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q7">
+                <label class="form-check-label" for="q2a3">Kansas</label>
+              </div>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio">
-              <label class="form-check-label" for="q2a2">Washington</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" id="q7-ans">
-              <label class="form-check-label" for="q2a3">Maryland</label>
-            </div>
+            <br><a href="#" class="btn submit-btn" id="q7-btn">Nästa fråga</a>
           </div>
-          <br><a href="#" class="btn submit-btn" id="q7-btn">Nästa fråga</a>
         </div>
-      </div>
 
-      <!-- Fråga 8 -->
-      <div class="card" id="q8">
-        <img src="img/maryland.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">1. Vilken amerikansk delstat är markerad på bilden?</p>
-          <div class="form-alternatives">
-            <div class="form-check">
-              <input class="form-check-input" type="radio">
-              <label class="form-check-label" for="q2a1">New York</label>
+        <!-- Fråga 8 -->
+        <div class="card" id="q8">
+          <img src="img/louisiana.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">8. Vilken amerikansk delstat är markerad på bilden?</p>
+            <div class="form-alternatives">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q8">
+                <label class="form-check-label" for="q2a1">Arizona</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q8">
+                <label class="form-check-label" for="q2a2">Missisippi</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q8" id="q8-ans">
+                <label class="form-check-label" for="q2a3">Louisiana</label>
+              </div>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio">
-              <label class="form-check-label" for="q2a2">Washington</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" id="q8-ans">
-              <label class="form-check-label" for="q2a3">Maryland</label>
-            </div>
+            <br><a href="#" class="btn submit-btn" id="q8-btn">Nästa fråga</a>
           </div>
-          <br><a href="#" class="btn submit-btn" id="q8-btn">Nästa fråga</a>
         </div>
-      </div>
 
-      <!-- Fråga 9 -->
-      <div class="card" id="q9">
-        <img src="img/maryland.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">1. Vilken amerikansk delstat är markerad på bilden?</p>
-          <div class="form-alternatives">
-            <div class="form-check">
-              <input class="form-check-input" type="radio">
-              <label class="form-check-label" for="q2a1">New York</label>
+        <!-- Fråga 9 -->
+        <div class="card" id="q9">
+          <img src="img/newmexico.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">9. Vilken amerikansk delstat är markerad på bilden?</p>
+            <div class="form-alternatives">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q9" id="q9-ans">
+                <label class="form-check-label" for="q2a1">New Mexico</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q9">
+                <label class="form-check-label" for="q2a2">Texas</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q9">
+                <label class="form-check-label" for="q2a3">Albuquerque</label>
+              </div>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio">
-              <label class="form-check-label" for="q2a2">Washington</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" id="q9-ans">
-              <label class="form-check-label" for="q2a3">Maryland</label>
-            </div>
+            <br><a href="#" class="btn submit-btn" id="q9-btn">Nästa fråga</a>
           </div>
-          <br><a href="#" class="btn submit-btn" id="q9-btn">Nästa fråga</a>
         </div>
-      </div>
 
-      <!-- Fråga 10-->
-      <div class="card" id="q10">
-        <img src="img/maryland.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">1. Vilken amerikansk delstat är markerad på bilden?</p>
-          <div class="form-alternatives">
-            <div class="form-check">
-              <input class="form-check-input" type="radio">
-              <label class="form-check-label" for="q2a1">New York</label>
+        <!-- Fråga 10-->
+        <div class="card" id="q10">
+          <img src="img/alabama.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">10. Vilken amerikansk delstat är markerad på bilden?</p>
+            <div class="form-alternatives">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q10">
+                <label class="form-check-label" for="q2a1">Westland</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q10" id="q10-ans">
+                <label class="form-check-label" for="q2a2">Alabama</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="q10"
+                <label class="form-check-label" for="q2a3">Seattle</label>
+              </div>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio">
-              <label class="form-check-label" for="q2a2">Washington</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" id="q10-ans">
-              <label class="form-check-label" for="q2a3">Maryland</label>
-            </div>
+            <br><a href="#" class="btn submit-btn" id="q10-btn">Nästa fråga</a>
           </div>
-          <br><a href="#" class="btn submit-btn" id="q10-btn">Nästa fråga</a>
         </div>
-      </div>
 
-      <!-- Avslutning-->
-      <div class="card" id="finish">
-        <img src="img/america.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Tack för att du gjort mitt quiz!</p>
-          <p id="p-points-finish"></p>
-          <a href="index.html" class="btn submit-btn" id="q10-btn">Kör igen!</a>
+        <!-- Avslutning-->
+        <div class="card" id="finish">
+          <img src="img/america.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Tack för att du gjorde mitt quiz!</p>
+            <p id="p-points-finish"></p>
+            <p id="p-finish-comment"></p>
+            <a href="index.html" class="btn submit-btn" id="q10-btn">Kör igen!</a>
+          </div>
         </div>
-      </div>
 
-    </form>
+      </form>
   </div>
 
   <script src="js/script.js"></script> <!-- Inlänkning av javascriptet -->

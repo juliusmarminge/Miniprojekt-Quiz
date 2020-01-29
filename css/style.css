@@ -15,7 +15,7 @@ body {
   padding: 20px;
 }
 
-.form-alternatives{
+.form-alternatives {
   display: inline-block;
   text-align: left;
 }
@@ -31,15 +31,17 @@ body {
   color: #fff;
   text-align: center;
 }
-.card img{
+
+.card img {
   padding-top: 40px;
   width: 90%;
 }
+
 .card .card-text {
   font-size: 1.2rem;
 }
 
-.error-msg{
+.error-msg {
   color: red;
   font-size: 12px;
 }
@@ -54,7 +56,13 @@ body {
   border-radius: 6px;
 }
 
-.error-msg{
+.submit-btn:hover {
+  background: #222428;
+  border: 1px solid #262431;
+  color: #f1f1f1;
+}
+
+.error-msg {
   margin-bottom: 0;
 }
 
@@ -62,6 +70,6 @@ body {
   cursor: pointer;
 }
 
-#q1{
+#q1 {
   display: block;
 }
