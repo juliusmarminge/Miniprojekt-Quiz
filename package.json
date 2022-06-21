@@ -1,0 +1,17 @@
+{
+  "name": "quiz-app",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel"
+  },
+  "dependencies": {
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@parcel/config-default": "latest",
+    "parcel": "latest",
+    "parcel-reporter-static-files-copy": "latest"
+  }
+}
